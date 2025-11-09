@@ -1,0 +1,202 @@
+/* ---
+  LUNISOLAR FLYER STYLESHEET
+  (MidnightCreate Theme)
+--- */
+
+/* --- 1. Root Variables (The Theme) --- */
+:root {
+    /* New Palette:
+      - Midnight: Deep, dark blues/indigos
+      - Create Mod: Brassy gold, dark grey-blue
+    */
+    --color-bg: #0a0f1a;          /* Deep Midnight blue */
+    --color-bg-light: #161B22;    /* Create Mod "Andesite" grey */
+    --color-primary: #E0B04F;     /* Create Mod "Brass" gold */
+    --color-secondary: #4A3C2B;   /* Dark supporting brown/brass */
+    --color-text: #E6EDF3;        /* Light gray */
+    --color-text-dim: #6E99D0;    /* Create Mod "Schematic" blue */
+    --color-discord: #5865F2;     /* Discord's brand blue */
+    --color-youtube: #FF0000;     /* YouTube Red */
+
+    /* Shapes */
+    --border-radius-card: 20px;   /* Main "round" radius */
+    --border-radius-pill: 50px;   /* Fully rounded "pill" */
+    --border-color: #30363D;
+}
+
+/* --- 2. Body & Page Setup --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px; /* Padding for mobile */
+    
+    /* The space gradient background */
+    background-color: var(--color-bg);
+    background-image: linear-gradient(180deg, #0a0f1a 0%, #1A1F2A 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    color: var(--color-text);
+    box-sizing: border-box;
+}
+
+.flyer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 40px); /* Fill the screen */
+}
+
+/* --- 3. The Flyer Card --- */
+.flyer-card {
+    background-color: var(--color-bg-light); /* Andesite grey */
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-card);
+    padding: 30px 40px;
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    
+    /* A subtle brass glow */
+    box-shadow: 0 5px 30px rgba(224, 176, 79, 0.1);
+}
+
+/* --- 4. Text Content --- */
+
+/* Style for your logo image */
+.flyer-logo-img {
+    width: 100%; /* Spans the full content width of the card */
+    max-width: 100%; /* Ensures it doesn't overflow */
+    height: auto; /* Maintains aspect ratio */
+    margin: 0 auto;
+}
+
+/* "Coming Soon" Banner (Create Mod Theme) */
+.coming-soon-banner {
+    background-color: var(--color-primary); /* Brass gold */
+    color: var(--color-bg); /* Dark background text */
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: var(--border-radius-pill);
+    text-transform: uppercase;
+    margin: 25px auto 0;
+    display: inline-block;
+}
+
+/* Style for the description */
+.flyer-description {
+    font-size: 1rem;
+    color: var(--color-text-dim); /* Schematic blue */
+    line-height: 1.6;
+    margin: 20px 0 25px 0;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-dim); /* Schematic blue */
+    margin: 25px 0 25px 0;
+}
+
+.join-now {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-top: 30px;
+}
+
+/* --- 5. IP Address Box --- */
+.ip-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-bg); /* Midnight */
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-pill); /* Rounded pill shape */
+    overflow: hidden; /* Key to rounding the button */
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.ip-address {
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-text);
+    padding: 12px 20px;
+    
+    /* Prevents the text from being selected when copying */
+    user-select: none;
+}
+
+.copy-ip-btn {
+    background-color: var(--color-primary); /* Brass gold */
+    color: var(--color-bg);
+    border: none;
+    padding: 14px 18px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    
+    /* Aligns icon perfectly */
+    display: grid;
+    place-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.copy-ip-btn:hover {
+    background-color: #f0c05f; /* Lighter brass on hover */
+}
+
+/* --- 6. Link Buttons --- */
+.link-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between buttons */
+}
+
+.flyer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+    
+    padding: 14px 20px;
+    border-radius: var(--border-radius-pill); /* Rounded pill buttons */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.flyer-button i {
+    font-size: 1.2rem; /* Make icons slightly larger */
+}
+
+/* Button-specific colors */
+.discord-button {
+    background-color: var(--color-discord);
+    color: white;
+}
+.discord-button:hover {
+    opacity: 0.85;
+}
+
+/* NEW: YouTube Button Style */
+.youtube-button {
+    background-color: var(--color-youtube);
+    color: white;
+}
+.youtube-button:hover {
+    opacity: 0.85;
+}
+
+/* This style is now used by the Website AND Wiki buttons */
+.website-button {
+    background-color: var(--color-secondary); /* Dark brass/brown */
+    color: var(--color-text);
+    border: 1px solid var(--border-color);
+}
+.website-button:hover {
+    border-color: var(--color-primary); /* Brass gold outline */
+}

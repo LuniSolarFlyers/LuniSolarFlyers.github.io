@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunisolar Server Flyer</title>
+    <link rel="stylesheet" href="flyer-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="flyer-container">
+        <div class="flyer-card">
+            
+            <a href="https://ibb.co/zTtLW8tV"><img src="https://i.ibb.co/nNKVq3KM/minecraft-title-4.png" alt="Lunisolar" border="0" class="flyer-logo-img"></a>
+            
+            <div class="coming-soon-banner">
+                COMING SOON
+            </div>
+            
+            <p class="flyer-description">
+                Welcome to a new OneBlock adventure! Start from a single block and build your empire in the cosmos. Progress through unique phases, master the economy, and join a friendly non-P2W community.
+            </p>
+            
+            <div class="ip-box">
+                <span class="ip-address">play.lunisolar.net</span>
+                <button class="copy-ip-btn" aria-label="Copy IP Address"><i class="fas fa-copy"></i></button>
+            </div>
+            
+            <p class="tagline">The Best Non-P2W Oneblock Server</p>
+
+            <div class="link-section">
+                <a href="https://discord.gg/6Wty3psyhn" target="_blank" class="flyer-button discord-button">
+                    <i class="fab fa-discord"></i> Join our Discord
+                </a>
+
+                <a href="https://discord.gg/Uq9gXbVmBZ" target="_blank" class="flyer-button website-button">
+                    <i class="fas fa-life-ring"></i> Join our Support Server
+                </a>
+                
+                <a href="https://www.youtube.com/channel/UCJp37BDQfk0b4_bs5TKk2CQ" target="_blank" class="flyer-button youtube-button">
+                    <i class="fab fa-youtube"></i> Visit our YouTube
+                </a>
+                
+                <a href="https://lunisolarsmp.wixsite.com/lunisolarsmp" target="_blank" class="flyer-button website-button">
+                    <i class="fas fa-globe"></i> Visit our Website
+                </a>
+                <a href="https://lunisolarwiki.github.io/" target="_blank" class="flyer-button website-button">
+                    <i class="fas fa-book"></i> Visit the Wiki
+                </a>
+            </div>
+
+            <p class="join-now">Get Ready to Play!</p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.copy-ip-btn').addEventListener('click', () => {
+            const ipText = document.querySelector('.ip-address').innerText;
+            navigator.clipboard.writeText(ipText).then(() => {
+                alert('IP Address copied to clipboard!');
+            });
+        });
+    </script>
+
+</body>
+</html>
