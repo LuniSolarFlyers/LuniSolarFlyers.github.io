@@ -19,6 +19,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-main);
     background-color: var(--bg-dark);
+    /* Tells the browser to look inside the assets folder for the background image */
     background-image: url('assets/bp.jpg');
     background-size: cover;
     background-position: center;
