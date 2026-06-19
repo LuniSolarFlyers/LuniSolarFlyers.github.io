@@ -156,7 +156,7 @@ nav a:hover, nav a.active {
 }
 
 .vote-card {
-    background: var(--card-bg);
+    background: rgba(30, 20, 50, 0.5);
     border: 1px solid rgba(186, 85, 211, 0.3);
     padding: 20px;
     border-radius: 8px;
