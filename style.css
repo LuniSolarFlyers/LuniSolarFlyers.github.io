@@ -1,0 +1,106 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #120c1f url('assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #f1ecf7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.overlay {
+    background: rgba(18, 12, 31, 0.85);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    flex: 1;
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.logo {
+    max-width: 280px;
+    height: auto;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    background: rgba(30, 20, 50, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(186, 85, 211, 0.2);
+}
+nav a {
+    color: #dfd5ed;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+nav a:hover, nav a.active {
+    background: #ba55d3;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(186, 85, 211, 0.6);
+}
+.content-section {
+    background: rgba(25, 15, 45, 0.7);
+    border: 1px solid rgba(186, 85, 211, 0.3);
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+h1, h2 {
+    color: #e0b0ff;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #dfd5ed;
+    margin-bottom: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #8a2be2, #4b0082);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: 1px solid #ba55d3;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(186, 85, 211, 0.4);
+}
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #8c7d9e;
+}
