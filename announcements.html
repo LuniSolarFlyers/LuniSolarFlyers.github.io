@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISO SMP NETWORK - Announcements</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Custom styles inside the page to handle announcement formatting */
+        .announcement-card {
+            border-left: 4px solid var(--primary-neon);
+            margin-bottom: 30px;
+        }
+        .date-badge {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .update-section-title {
+            color: #fff;
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .announcement-card ul {
+            list-style-type: none;
+            padding-left: 5px;
+            margin-bottom: 15px;
+        }
+        .announcement-card li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+            color: var(--text-muted);
+        }
+        .announcement-card li strong {
+            color: #fff;
+        }
+        /* Clean table layout for the AFK Pool rates */
+        .rates-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+            background: rgba(15, 9, 20, 0.4);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .rates-table th, .rates-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(186, 85, 211, 0.15);
+        }
+        .rates-table th {
+            background: rgba(186, 85, 211, 0.1);
+            color: #fff;
+            font-weight: 600;
+        }
+        .rates-table tr:hover {
+            background: rgba(186, 85, 211, 0.05);
+        }
+        .highlight-green {
+            color: #55efc4;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="container">
+            <header>
+                <div class="logo-container">
+                    <img src="assets/logo.jpg" alt="SISO SMP NETWORK" class="logo">
+                </div>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Me</a>
+                    <a href="votes.html">Votes</a>
+                    <a href="rules.html">Rules</a>
+                    <a href="announcements.html" class="active">Announcements</a>
+                    <a href="https://shop.sisosmp.com" target="_blank">Shop</a>
+                    <a href="discord.html">Discord</a>
+                </nav>
+            </header>
+
+            <main class="content-section">
+                <h2>SERVER ANNOUNCEMENTS</h2>
+                <p>Stay up to date with the latest news, season updates, and economic changes happening across the network.</p>
+                
+                <div class="announcement-holder" style="margin-top: 30px;">
+                    
+                    <!-- Server Update Card -->
+                    <div class="card announcement-card">
+                        <span class="date-badge">📅 JUNE 22, 2026 - 10:12 PM</span>
+                        <h3 style="font-size: 24px; color: #fff; margin-bottom: 15px;">🚀 SERVER UPDATE: Economy Buffs & Kit Changes!</h3>
+                        
+                        <h4 class="update-section-title">📦 Crate & Store Updates</h4>
+                        <ul>
+                            <li>• <strong>Monthly Crates:</strong> Removed useless junk. Summer Rank chance buffed from <strong>0.900%</strong> ➡️ <span class="highlight-green">3.521%</span>!</li>
+                            <li>• <strong>Legendary Crate:</strong> Changed the 5x Legendary Key reward down to 3x Keys for balance.</li>
+                            <li>• <strong>New Spawn NPCs:</strong> Added a Warp to PvP NPC and a /store NPC so you don't have to ask staff for the store link.</li>
+                            <li>• <strong>Terms of Service:</strong> The web store Terms of Service have been updated. Please go check them out!</li>
+                        </ul>
+
+                        <h4 class="update-section-title">⚔️ Kit Balances (Non-P2W)</h4>
+                        <ul>
+                            <li>• Removed raw ores from rank kits and replaced them with useful logs and building blocks.</li>
+                            <li>• Added <strong>Totems of Undying</strong> to Gold, Emerald, Diamond, and Amethyst kits!</li>
+                        </ul>
+
+                        <h4 class="update-section-title">🏊 AFK Pool Rate Changes</h4>
+                        <p style="margin-bottom: 10px;">The reward rates for the AFK pool have been completely overhauled to reduce the grind and improve steady progression:</p>
+                        
+                        <table class="rates-table">
+                            <thead>
+                                <tr>
+                                    <th>Reward</th>
+                                    <th>Old Chance</th>
+                                    <th>New Chance</th>
+                                    <th>Change Summary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>$100 Cash</strong></td>
+                                    <td>50.0%</td>
+                                    <td class="highlight-green">60.0%</td>
+                                    <td>Slightly easier to hit baseline cash</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>$250 Cash</strong></td>
+                                    <td>25.0%</td>
+                                    <td class="highlight-green">35.0%</td>
+                                    <td>Significant 10% bump</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>$500 Cash</strong></td>
+                                    <td>12.0%</td>
+                                    <td class="highlight-green">20.0%</td>
+                                    <td>Nearly doubled the odds</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>$750 Cash</strong></td>
+                                    <td>5.0%</td>
+                                    <td class="highlight-green">10.0%</td>
+                                    <td>Exactly doubled the odds</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>$1,000 Cash</strong></td>
+                                    <td>1.5%</td>
+                                    <td class="highlight-green">5.0%</td>
+                                    <td>More than tripled (much less grindy)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Common Crate Key</strong></td>
+                                    <td>15.0%</td>
+                                    <td class="highlight-green">30.0%</td>
+                                    <td>Exactly doubled for steady key drops</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Epic Crate Key</strong></td>
+                                    <td>3.5%</td>
+                                    <td class="highlight-green">12.0%</td>
+                                    <td>More than tripled the availability</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Legendary Crate Key</strong></td>
+                                    <td>0.5%</td>
+                                    <td class="highlight-green">3.0%</td>
+                                    <td>6x higher chance (actually winnable)</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p class="highlight-text" style="margin-top: 20px; text-align: center;">🎮 Hop online and test your luck with the new rates. Have fun!</p>
+                    </div>
+
+                </div>
+            </main>
+
+            <footer>
+                &copy; 2026 SISO SMP NETWORK. All rights reserved.
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
